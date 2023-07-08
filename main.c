@@ -18,8 +18,16 @@ int main(void) {
   else if (op == '*') {
     printf ("%.2f\n", val1 * val2);
   }
+  else if (op == '/') {
+    if (val2 == 0) {
+      printf ("Division by zero\n");
+    }
+    else {
+      printf ("%.2f\n", val1 / val2);
+    }
+  }
   else {
-    printf ("%.2f\n", val1 / val2);
+    printf ("Unknown operator.\n");
   }
   
   return 0;
